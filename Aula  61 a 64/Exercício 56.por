@@ -2,22 +2,28 @@ programa
 {
     funcao inicio()
     {
-        inteiro contador = 0
-        real numero, soma = 0, media
+  inteiro numero = 1, soma = 0 , contagem = 0
 
-        enquanto (contador < 10)
-        {
-            escreva("Digite um número: ")
-            leia(numero)
+  real media
+  
 
-            soma = soma + numero
-            contador = contador + 1
-        }
+  enquanto (numero >= 0 ){
+    escreva("Digite um número:")
+  }
 
-        media = soma / 10
+  leia(numero)
 
-        escreva("A soma dos números é: ", soma, "\n")
-        escreva("A média dos números é: ", media)
+  se (numero >= 0 ){soma=soma + numero 
+  contagem ++}
+
+  escreva("Soma:", soma, "\n")
+
+  media=soma / contagem
+
+  escreva("Média :",media)
+
+  
     }
 }
+
 
